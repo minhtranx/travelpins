@@ -1,6 +1,9 @@
 {
 	"name": "travelpins",
 	"version": "1.0.0",
+	"engines": {
+		"node": "13.13.0"
+	},
 	"description": "",
 	"scripts": {
 		"dev": "cross-env NODE_ENV=development nodemon --exec babel-node ./src",
