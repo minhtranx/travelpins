@@ -2,7 +2,8 @@
 	"name": "travelpins",
 	"version": "1.0.0",
 	"engines": {
-		"node": "13.13.0"
+		"node": "13.13.0",
+		"npm": "6.14.4"
 	},
 	"description": "",
 	"scripts": {
@@ -11,7 +12,7 @@
 		"prebuild": "yarn build:clean",
 		"build": "babel ./src -d ./build -s",
 		"heroku-postbuild": "yarn build",
-		"start": "node ./build/index.js"
+		"start": "cd build && node index.js"
 	},
 	"keywords": [],
 	"author": "",

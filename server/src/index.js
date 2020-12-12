@@ -45,7 +45,7 @@ const server = new ApolloServer({
 	}
 });
 
-server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
+server.listen({ port: process.env.PORT || 5000 }).then(({ url }) => {
 	console.log(
 		`Server is running at ${url} in ${config.NODE_ENV.toUpperCase()} mode.`
 	);
