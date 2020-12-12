@@ -10,6 +10,8 @@
 -   [Material-UI](https://material-ui.com/) for styling.
 -   [Apollo Server & Client](https://www.apollographql.com/docs/react/) for GraphQL communications, including GraphQL Subscriptions for real time data.
 -   MongoDB hosted FREE by [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), models & queries handled by [Mongoose](https://mongoosejs.com/).
+-   [Cloudinary API](https://cloudinary.com/) for images upload/storage.
+-   Authentication with [Google OAuth 2.0](https://developers.google.com/identity/protocols/oauth2).
 -   App Server is hosted FREE on [Heroku](https://heroku.com/), so it will be slow on first load. Don't judge me.
 -   App Client is hosted FREE on [Netlify](https://www.netlify.com/).
 
