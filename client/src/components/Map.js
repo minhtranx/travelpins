@@ -68,6 +68,10 @@ const Map = ({ classes }) => {
 	const handleMapClick = ({ lngLat, leftButton }) => {
 		if (!leftButton) return;
 		if (!state.draft) {
+			// Remove popup if users click away
+			if (popup) {
+				setPopup(null);
+			}
 			dispatch({ type: 'CREATE_DRAFT' });
 		}
 
