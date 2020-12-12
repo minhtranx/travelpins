@@ -84,7 +84,7 @@ const Map = ({ classes }) => {
 	const highlightNewPin = pin => {
 		const isNewPin =
 			differenceInMinutes(Date.now(), Number(pin.createdAt)) <= 30;
-		return isNewPin ? 'limegreen' : 'darkblue';
+		return isNewPin ? 'limegreen' : 'blue';
 	};
 
 	const handleSelectPin = pin => {
@@ -138,7 +138,7 @@ const Map = ({ classes }) => {
 						longitude={state.draft.longitude}
 						offsetLeft={-19}
 						offsetTop={-3}>
-						<PinIcon size={40} color="blue" />
+						<PinIcon size={40} color="pink" />
 					</Marker>
 				)}
 
