@@ -8,7 +8,7 @@
 		"prebuild": "yarn build:clean",
 		"build": "babel ./src -d ./build -s",
 		"heroku-postbuild": "yarn build",
-		"start": "node build/index.js"
+		"start": "node ./build/index.js"
 	},
 	"keywords": [],
 	"author": "",
