@@ -16,6 +16,7 @@ if (process.env.NODE_ENV !== 'production') {
 const config = {
 	NODE_ENV: process.env.NODE_ENV || 'development',
 	MONGO_URI: process.env.MONGO_URI,
+	PORT: parseInt(process.env.PORT) || 4000,
 	OAUTH_CLIENT_ID: process.env.OAUTH_CLIENT_ID || ''
 };
 
