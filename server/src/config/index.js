@@ -1,13 +1,14 @@
-import dotenv from 'dotenv-safe';
 import path from 'path';
 
 /**
  * Wrap variables in a better way:
  * - Default values to prevent adhoc failure
  * - Use this object for intellisense
+ * Update 2020/12/12: Conditionally require dotenv-safe
+ * to avoid errors in heroku
  */
 if (process.env.NODE_ENV !== 'production') {
-	dotenv.config({
+	require('dotenv-safe').config({
 		path: path.join(__dirname, `../../.env`),
 		example: path.join(__dirname, `../../.env.example`)
 	});
