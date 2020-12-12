@@ -32,11 +32,13 @@ const Map = ({ classes }) => {
 	const { state, dispatch } = useContext(Context);
 	useEffect(() => {
 		getPins();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	const [viewport, setViewport] = useState(INITIAL_VIEWPORT);
 	const [userPosition, setUserPosition] = useState(null);
 	useEffect(() => {
 		getUserPosition();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	const [popup, setPopup] = useState(null);
 	// Remove popup if pin itself is deleted by author
@@ -44,6 +46,7 @@ const Map = ({ classes }) => {
 		const pinExists =
 			popup && state.pins.findIndex(pin => pin._id === popup._id) !== -1;
 		if (!pinExists) setPopup(null);
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [state.pins.length]);
 
 	const getUserPosition = () => {
