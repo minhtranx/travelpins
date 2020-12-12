@@ -12,6 +12,7 @@
 -   MongoDB hosted FREE by [MongoDB Atlas](https://www.mongodb.com/cloud/atlas), models & queries handled by [Mongoose](https://mongoosejs.com/).
 -   [Cloudinary API](https://cloudinary.com/) for images upload/storage.
 -   Authentication with [Google OAuth 2.0](https://developers.google.com/identity/protocols/oauth2).
+-   ES6 on server side with babel.
 -   App Server is hosted FREE on [Heroku](https://heroku.com/), so it will be slow on first load. Don't judge me.
 -   App Client is hosted FREE on [Netlify](https://www.netlify.com/).
 
