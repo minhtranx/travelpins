@@ -14,10 +14,7 @@ dotenv.config({
 const config = {
 	NODE_ENV: process.env.NODE_ENV || 'development',
 	PORT: parseInt(process.env.PORT) || 4000,
-	MONGO_URI:
-		process.env.NODE_ENV === 'production'
-			? process.env.MONGO_URI
-			: process.env.MONGO_URI_DEV,
+	MONGO_URI: process.env.MONGO_URI,
 	OAUTH_CLIENT_ID: process.env.OAUTH_CLIENT_ID || ''
 };
 
