@@ -1,15 +1,14 @@
 {
-	"name": "geopins",
+	"name": "travelpins",
 	"version": "1.0.0",
 	"description": "",
-	"main": "server.js",
 	"scripts": {
 		"dev": "cross-env NODE_ENV=development nodemon --exec babel-node ./src",
 		"build:clean": "rimraf ./build",
 		"prebuild": "yarn build:clean",
 		"build": "babel ./src -d ./build -s",
 		"heroku-postbuild": "yarn build",
-		"start": "cd build && cross-env NODE_ENV=production node ."
+		"start": "cd build && node ."
 	},
 	"keywords": [],
 	"author": "",
