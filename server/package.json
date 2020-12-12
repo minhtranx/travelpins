@@ -8,7 +8,7 @@
 		"build:clean": "rimraf ./build",
 		"prebuild": "yarn build:clean",
 		"build": "babel ./src -d ./build -s",
-		"heroku-postbuild": "yarn build && yarn start",
+		"heroku-postbuild": "yarn build",
 		"start": "cd build && cross-env NODE_ENV=production node ."
 	},
 	"keywords": [],
